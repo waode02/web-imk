@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Dapur Nusantara - UMKM makanan tradisional Indonesia dengan cita rasa autentik dan kualitas terjamin. Layanan katering, paket harian, dan hampers.">
+    <meta name="keywords" content="makanan tradisional, katering, UMKM, makanan Indonesia, rendang, sate, nasi goreng">
+    <meta name="author" content="Dapur Nusantara">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dapurnusantara.com/">
+    <meta property="og:title" content="Dapur Nusantara - Makanan Tradisional Berkualitas">
+    <meta property="og:description"
+        content="Nikmati kelezatan makanan tradisional Indonesia dengan layanan katering, paket harian, dan hampers.">
+    <meta property="og:image" content="assets/hero-food.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dapurnusantara.com/">
+    <meta property="twitter:title" content="Dapur Nusantara - Makanan Tradisional Berkualitas">
+    <meta property="twitter:description"
+        content="Nikmati kelezatan makanan tradisional Indonesia dengan layanan katering, paket harian, dan hampers.">
+    <meta property="twitter:image" content="assets/hero-food.png">
+
+    <title>Dapur Nusantara - Makanan Tradisional Berkualitas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Dapur Nusantara",
+      "description": "UMKM makanan tradisional Indonesia",
+      "servesCuisine": "Indonesian",
+      "priceRange": "$$",
+      "telephone": "+6281234567890",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Jakarta",
+        "addressCountry": "ID"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="Page scroll progress"
+        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+    <!-- Header Navigation -->
+    <header id="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>🍜 Dapur Nusantara</h1>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#layanan" class="nav-link">Layanan</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#keunggulan" class="nav-link">Keunggulan</a></li>
+                    <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false"
+                    aria-controls="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 id="hero-title" class="hero-title">Cita Rasa Nusantara di Setiap Gigitan</h2>
+                    <p class="hero-description">
+                        Nikmati kelezatan makanan tradisional Indonesia yang dibuat dengan resep turun-temurun
+                        dan bahan-bahan pilihan berkualitas tinggi. Cocok untuk acara keluarga, arisan, atau sekadar
+                        makan bersama.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary">Lihat Menu Kami</a>
+                        <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Nusantara,%20saya%20ingin%20memesan%20makanan"
+                            class="btn btn-secondary" target="_blank" rel="noopener noreferrer"
+                            aria-label="Pesan via WhatsApp">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/hero-food.png"
+                        alt="Nasi Goreng tradisional Indonesia dengan telur mata sapi, kerupuk, dan sayuran segar"
+                        class="hero-img" loading="eager">
+                </div>
+            </div>
+        </section>
+
+        <!-- Layanan Section -->
+        <section id="layanan" class="services" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title" class="section-title">Layanan Kami</h2>
+                <p class="section-subtitle">Berbagai pilihan makanan tradisional untuk kebutuhan Anda</p>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <img src="assets/service-catering.png"
+                            alt="Buffet katering dengan berbagai hidangan tradisional Indonesia" class="service-image"
+                            loading="lazy">
+                        <div class="service-content">
+                            <div class="service-icon" aria-hidden="true">🍲</div>
+                            <h3>Katering Acara</h3>
+                            <p>Layanan katering untuk acara keluarga, kantor, atau perayaan dengan menu lengkap dan
+                                porsi sesuai kebutuhan.</p>
+                            <a href="#kontak" class="btn-link">Pesan Sekarang →</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="assets/service-daily.png" alt="Paket makanan harian dalam kotak ramah lingkungan"
+                            class="service-image" loading="lazy">
+                        <div class="service-content">
+                            <div class="service-icon" aria-hidden="true">📦</div>
+                            <h3>Paket Harian</h3>
+                            <p>Paket makanan harian dengan menu bervariasi, cocok untuk makan siang atau makan malam
+                                keluarga.</p>
+                            <a href="#kontak" class="btn-link">Pesan Sekarang →</a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <img src="assets/service-hampers.png"
+                            alt="Hampers makanan khas Nusantara dengan kemasan menarik" class="service-image"
+                            loading="lazy">
+                        <div class="service-content">
+                            <div class="service-icon" aria-hidden="true">🎁</div>
+                            <h3>Hampers & Oleh-oleh</h3>
+                            <p>Paket hampers makanan khas Nusantara yang cocok untuk hadiah atau oleh-oleh dengan
+                                kemasan menarik.</p>
+                            <a href="#kontak" class="btn-link">Pesan Sekarang →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu & Pricing Section -->
+        <section id="menu" class="menu-section" aria-labelledby="menu-title">
+            <div class="container">
+                <h2 id="menu-title" class="section-title">Menu Favorit Kami</h2>
+                <p class="section-subtitle">Pilihan menu terbaik dengan cita rasa autentik</p>
+
+                <div class="menu-grid">
+                    <article class="menu-card">
+                        <div class="menu-image-wrapper">
+                            <img src="assets/menu-rendang.png" alt="Rendang daging sapi dengan bumbu kaya rempah"
+                                class="menu-image" loading="lazy">
+                            <span class="menu-badge">Populer</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Rendang</h3>
+                            <p class="menu-description">Daging sapi empuk dengan bumbu rempah kaya, dimasak hingga
+                                meresap sempurna</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 45.000</span>
+                                <button class="btn-order" data-menu="Rendang">Pesan</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <div class="menu-image-wrapper">
+                            <img src="assets/menu-sate.png" alt="Sate ayam dengan bumbu kacang dan lontong"
+                                class="menu-image" loading="lazy">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Sate Ayam</h3>
+                            <p class="menu-description">Sate ayam bakar dengan bumbu kacang spesial dan lontong</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 35.000</span>
+                                <button class="btn-order" data-menu="Sate Ayam">Pesan</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <div class="menu-image-wrapper">
+                            <img src="assets/menu-gado-gado.png" alt="Gado-gado dengan sayuran segar dan bumbu kacang"
+                                class="menu-image" loading="lazy">
+                        </div>
+                        <div class="menu-content">
+                            <h3>Gado-Gado</h3>
+                            <p class="menu-description">Salad sayuran segar dengan bumbu kacang, tahu, tempe, dan telur
+                            </p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 25.000</span>
+                                <button class="btn-order" data-menu="Gado-Gado">Pesan</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <div class="menu-image-wrapper">
+                            <img src="assets/menu-soto.jpg" 
+                            class="menu-image" loading="lazy">
+                                
+                            
+                        </div>
+                        <div class="menu-content">
+                            <h3>Soto Ayam</h3>
+                            <p class="menu-description">Sup ayam kuning dengan bumbu rempah, dilengkapi nasi dan kerupuk
+                            </p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 30.000</span>
+                                <button class="btn-order" data-menu="Soto Ayam">Pesan</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <div class="menu-image-wrapper">
+                            <img src="assets/menu-nasiuduk.jpg"
+                            class="menu-image" loading="lazy">
+                            
+                            <span class="menu-badge">Rekomendasi</span>
+                        </div>
+                        <div class="menu-content">
+                            <h3>Nasi Uduk</h3>
+                            <p class="menu-description">Nasi gurih santan dengan lauk lengkap: ayam goreng, tempe, telur
+                            </p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 28.000</span>
+                                <button class="btn-order" data-menu="Nasi Uduk">Pesan</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <div class="menu-image-wrapper">
+                            <img src="assets/menu-ayam.jpg"
+                            class="menu-image" loading="lazy">
+                            
+                        </div>
+                        <div class="menu-content">
+                            <h3>Ayam Goreng</h3>
+                            <p class="menu-description">Ayam goreng rempah crispy dengan sambal dan lalapan segar</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 32.000</span>
+                                <button class="btn-order" data-menu="Ayam Goreng">Pesan</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="menu-note">
+                    <p><strong>Catatan:</strong> Harga dapat berubah sewaktu-waktu. Untuk pemesanan dalam jumlah besar,
+                        hubungi kami untuk harga spesial.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Keunggulan Section -->
+        <section id="keunggulan" class="advantages" aria-labelledby="advantages-title">
+            <div class="container">
+                <h2 id="advantages-title" class="section-title">Mengapa Memilih Kami?</h2>
+                <p class="section-subtitle">Komitmen kami untuk memberikan yang terbaik</p>
+
+                <div class="advantages-grid">
+                    <article class="advantage-item">
+                        <div class="advantage-icon" aria-hidden="true">✅</div>
+                        <h3>Bahan Berkualitas</h3>
+                        <p>Menggunakan bahan-bahan segar dan pilihan terbaik untuk menjamin cita rasa autentik.</p>
+                    </article>
+
+                    <article class="advantage-item">
+                        <div class="advantage-icon" aria-hidden="true">👨‍🍳</div>
+                        <h3>Resep Turun-Temurun</h3>
+                        <p>Dibuat dengan resep tradisional yang telah diwariskan secara turun-temurun.</p>
+                    </article>
+
+                    <article class="advantage-item">
+                        <div class="advantage-icon" aria-hidden="true">🚚</div>
+                        <h3>Pengiriman Cepat</h3>
+                        <p>Layanan antar yang cepat dan tepat waktu ke lokasi Anda.</p>
+                    </article>
+
+                    <article class="advantage-item">
+                        <div class="advantage-icon" aria-hidden="true">💰</div>
+                        <h3>Harga Terjangkau</h3>
+                        <p>Harga yang bersahabat tanpa mengurangi kualitas dan kelezatan.</p>
+                    </article>
+
+                    <article class="advantage-item">
+                        <div class="advantage-icon" aria-hidden="true">🧼</div>
+                        <h3>Higienis & Aman</h3>
+                        <p>Proses pembuatan yang higienis dengan standar kebersihan tinggi.</p>
+                    </article>
+
+                    <article class="advantage-item">
+                        <div class="advantage-icon" aria-hidden="true">⭐</div>
+                        <h3>Pelayanan Ramah</h3>
+                        <p>Tim yang siap melayani dengan ramah dan responsif terhadap kebutuhan Anda.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimoni" class="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <h2 id="testimonials-title" class="section-title">Apa Kata Pelanggan Kami?</h2>
+                <p class="section-subtitle">Testimoni dari pelanggan yang puas</p>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating" aria-label="Rating 5 dari 5 bintang">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                        <p class="testimonial-text">"Rendangnya enak banget! Bumbunya meresap sempurna dan dagingnya
+                            empuk. Pasti order lagi untuk acara keluarga berikutnya."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">👤</div>
+                            <div class="author-info">
+                                <h4>Ibu Siti Rahayu</h4>
+                                <p>Jakarta Selatan</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating" aria-label="Rating 5 dari 5 bintang">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                        <p class="testimonial-text">"Paket kateringnya sangat membantu untuk acara kantor. Makanannya
+                            enak, porsinya pas, dan pelayanannya ramah. Recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">👤</div>
+                            <div class="author-info">
+                                <h4>Bapak Ahmad Fauzi</h4>
+                                <p>Tangerang</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="testimonial-rating" aria-label="Rating 5 dari 5 bintang">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                        </div>
+                        <p class="testimonial-text">"Hampers lebaran dari Dapur Nusantara selalu jadi favorit keluarga.
+                            Kemasannya cantik dan isinya enak-enak semua!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar" aria-hidden="true">👤</div>
+                            <div class="author-info">
+                                <h4>Ibu Dewi Lestari</h4>
+                                <p>Bekasi</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section" aria-labelledby="faq-title">
+            <div class="container">
+                <h2 id="faq-title" class="section-title">Pertanyaan yang Sering Diajukan</h2>
+                <p class="section-subtitle">Temukan jawaban untuk pertanyaan Anda</p>
+
+                <div class="faq-container">
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+                            <span>Berapa minimal order untuk katering?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq1" hidden>
+                            <p>Minimal order untuk katering adalah 20 porsi. Untuk pemesanan di bawah 20 porsi, Anda
+                                bisa memilih paket harian kami.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+                            <span>Apakah bisa pesan untuk hari yang sama?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq2" hidden>
+                            <p>Untuk pemesanan hari yang sama, mohon hubungi kami terlebih dahulu untuk mengecek
+                                ketersediaan. Kami sarankan untuk memesan minimal H-1 untuk hasil terbaik.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+                            <span>Area mana saja yang dilayani untuk pengiriman?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq3" hidden>
+                            <p>Kami melayani area Jakarta, Bogor, Depok, Tangerang, dan Bekasi (Jabodetabek). Untuk area
+                                di luar itu, silakan hubungi kami untuk konfirmasi.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+                            <span>Apakah ada paket menu untuk acara tertentu?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq4" hidden>
+                            <p>Ya, kami menyediakan paket khusus untuk berbagai acara seperti pernikahan, arisan,
+                                syukuran, dan acara kantor. Hubungi kami untuk konsultasi menu yang sesuai dengan
+                                kebutuhan Anda.</p>
+                        </div>
+                    </article>
+
+                    <article class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+                            <span>Bagaimana cara pembayarannya?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer" id="faq5" hidden>
+                            <p>Kami menerima pembayaran via transfer bank, e-wallet (GoPay, OVO, Dana), dan cash on
+                                delivery (COD) untuk area tertentu. Detail pembayaran akan diberikan saat konfirmasi
+                                pesanan.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="kontak" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 id="contact-title" class="section-title">Hubungi Kami</h2>
+                    <p class="contact-description">
+                        Siap melayani pesanan Anda! Hubungi kami melalui WhatsApp untuk konsultasi menu,
+                        harga, dan pemesanan. Kami akan merespons dengan cepat.
+                    </p>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Dapur%20Nusantara,%20saya%20ingin%20bertanya%20tentang%20menu%20dan%20harga"
+                        class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer"
+                        aria-label="Hubungi via WhatsApp">
+                        <span class="whatsapp-icon" aria-hidden="true">📱</span>
+                        Hubungi via WhatsApp
+                    </a>
+                    <div class="contact-info">
+                        <p><strong>Jam Operasional:</strong> Senin - Sabtu, 08.00 - 20.00 WIB</p>
+                        <p><strong>Area Pengiriman:</strong> Jakarta, Bogor, Depok, Tangerang, Bekasi</p>
+                        <p><strong>Email:</strong> info@dapurnusantara.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2026 Dapur Nusantara. Semua hak dilindungi.</p>
+            <p class="footer-tagline">Kelezatan Tradisional, Kualitas Modern</p>
+            <div class="footer-links">
+                <a href="#home">Beranda</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#menu">Menu</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast" role="alert" aria-live="polite" aria-atomic="true" hidden>
+        <p class="toast-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
